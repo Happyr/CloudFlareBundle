@@ -21,3 +21,11 @@ happyr_cloud_flare:
 
 ```
 
+# Usage
+
+``` php
+
+    $cloudFlare=$this->container->get('happyr.clourflare.service.cloudflare');
+    $cloudFlare->api('zone_file_purge', array('z'=>'my-domain.com', 'url'=>'http://my-domain.com/static/style.css'));
+
+```
