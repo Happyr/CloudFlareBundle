@@ -1,0 +1,6 @@
+parameters:
+
+services:
+  happyr.clourflare.service.cloudflare:
+    class: Happyr\CloudFlareBundle\Service\CloudFlareService
+    arguments: ['', '', '']
