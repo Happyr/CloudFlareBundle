@@ -1,6 +1,6 @@
 <?php
 
-namespace HappyR\UserProjectBundle\DependencyInjection;
+namespace Happyr\CloudFlareBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

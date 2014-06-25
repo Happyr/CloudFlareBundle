@@ -1,11 +1,11 @@
 <?php
 
-namespace HappyR\UserProjectBundle;
+namespace Happyr\CloudFlareBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class HappyRUserProjectBundle
+ * Class HappyrCloudFlareBundle
  *
  * @author Tobias Nyholm
  *

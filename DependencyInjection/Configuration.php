@@ -1,6 +1,6 @@
 <?php
 
-namespace HappyR\UserProjectBundle\DependencyInjection;
+namespace Happyr\CloudFlareBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
