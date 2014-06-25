@@ -1,7 +1,7 @@
 {
     "name": "happyr/cloud-flare-bundle",
     "type": "symfony-bundle",
-    "description": "",
+    "description": "This Symfony2 bundle lets you talk to the CloudFlare client API",
     "keywords": ["CloudFlare", "Cloud Flare"],
     "homepage": "http://developer.happyr.se/",
     "license": "MIT",
