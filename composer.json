@@ -16,9 +16,6 @@
         "symfony/symfony": "~2.0",
         "symfony/yaml": "2.*"
     },
-    "require-dev": {
-        "mockery/mockery": "*"
-    },
     "autoload": {
         "psr-0": {
             "Happyr\\CloudFlareBundle": ""

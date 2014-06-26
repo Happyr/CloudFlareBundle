@@ -73,13 +73,34 @@ class CloudFlareService
         $opts[CURLOPT_POST] = count($parameters);
         $opts[CURLOPT_POSTFIELDS] = $postString;
 
-        //send the request
-        $ch = curl_init();
-        curl_setopt_array($ch, $opts);
-        $result = curl_exec($ch);
-        curl_close($ch);
+        $result=$this->sendRequest($opts);
 
         //return the response
         return json_decode($result, true);
+    }
+
+    /**
+     * Send the request
+     *
+     * @param array $options
+     *
+     * @return string
+     */
+    protected function sendRequest(array $parameters)
+    {
+        //Init curl
+        $ch = curl_init();
+
+        //set the options
+        curl_setopt_array($ch, $parameters);
+
+        //execute the request
+        $result = curl_exec($ch);
+
+        //close the connection
+        curl_close($ch);
+
+        //return the result
+        return $result;
     }
 }
