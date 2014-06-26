@@ -26,7 +26,7 @@ class HappyrCloudFlareExtension extends Extension
         $loader->load('services.yml');
 
         $def = $container->getDefinition('happyr.clourflare.service.cloudflare');
-        foreach(array('url', 'email', 'token') as $i=>$name) {
+        foreach (array('url', 'email', 'token') as $i => $name) {
             if (!empty($config[$name])) {
                 $def->replaceArgument($i, $config[$name]);
             }

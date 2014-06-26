@@ -42,10 +42,11 @@ class CloudFlareService
 
     /**
      * Make a API call to CloudFlare
-     * @link https://www.cloudflare.com/docs/client-api.html
      *
      * @param $action
      * @param array $parameters
+     *
+     * @link https://www.cloudflare.com/docs/client-api.html
      *
      * @return mixed|null
      */
@@ -62,7 +63,7 @@ class CloudFlareService
 
         //prepare the data
         $postString='';
-        foreach($parameters as $key=>$value) {
+        foreach ($parameters as $key => $value) {
             $postString .= $key.'='.$value.'&';
         }
         $postString = rtrim($postString, '&');
