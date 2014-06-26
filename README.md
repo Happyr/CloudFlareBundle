@@ -1,6 +1,6 @@
 # Happyr CloudFlare bundle
 
-This Symfony2 bundle lets you talk to the CloudFlare client API
+This Symfony2 bundle lets you talk to the CloudFlare client API. For API reference please visit the [CloudFlare website](https://www.cloudflare.com/docs/client-api.html).
 
 # Installation and Configuration
 
@@ -21,11 +21,13 @@ happyr_cloud_flare:
 
 ```
 
-# Usage
+# Usage example
+
+Here below is an example how you clear the cache for the `http://my-domain.com/static/style.css` url. 
 
 ``` php
 
-    $cloudFlare=$this->container->get('happyr.clourflare.service.cloudflare');
-    $cloudFlare->api('zone_file_purge', array('z'=>'my-domain.com', 'url'=>'http://my-domain.com/static/style.css'));
+$cloudFlare=$this->container->get('happyr.clourflare.service.cloudflare');
+$cloudFlare->api('zone_file_purge', array('z'=>'my-domain.com', 'url'=>'http://my-domain.com/static/style.css'));
 
 ```
