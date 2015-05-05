@@ -23,11 +23,11 @@ happyr_cloud_flare:
 
 # Usage example
 
-Here below is an example how you clear the cache for the `http://my-domain.com/static/style.css` url. 
+Here below is an example how you clear the cache for the `http://my-domain.com/static/style.css` url.
 
 ``` php
 
-$cloudFlare=$this->container->get('happyr.clourflare.service.cloudflare');
+$cloudFlare=$this->container->get('happyr.cloudflare.service.cloudflare');
 $cloudFlare->api('zone_file_purge', array('z'=>'my-domain.com', 'url'=>'http://my-domain.com/static/style.css'));
 
 ```
